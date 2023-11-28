@@ -1,0 +1,16 @@
+<label for="">Server Name</label>
+<input
+  type="text"
+  class="form-control outline outline-blue-300"
+  (input)="onUpdateServerName($event)"
+/>
+<p>{{ serverName }}</p>
+<button
+  class="btn bg-blue-200 p-3 rounded-sm m-2"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Servers
+</button>
+<app-server></app-server>
+<app-server></app-server>
