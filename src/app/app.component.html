@@ -1,3 +1,15 @@
-<h1 class="text-3xl font-bold underline">App Component</h1>
-<hr />
-<app-servers></app-servers>
+<div class="container mx-20 my-10">
+  <button class="border rounded-md p-2 bg-blue-300" (click)="handleClick()">
+    Toggle Password
+  </button>
+  <p *ngIf="showSecret">Secret Password: Tune</p>
+  <ul>
+    <li
+      *ngFor="let log of logs; index as i"
+      [ngStyle]="{ backgroundColor: i > 4 ? 'blue' : 'transparent' }"
+      [ngClass]="{ 'white-text': i > 4 }"
+    >
+      {{ log }}
+    </li>
+  </ul>
+</div>
