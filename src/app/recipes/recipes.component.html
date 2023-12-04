@@ -1,4 +1,12 @@
 <div class="grid grid-cols-2 gap-4">
-  <app-recipe-list></app-recipe-list>
-  <app-recipe-detail></app-recipe-detail>
+  <app-recipe-list
+    (selectedRecipeEventFromList)="selectedRecipe = $event"
+  ></app-recipe-list>
+  <app-recipe-detail
+    *ngIf="selectedRecipe; else infoText"
+    [recipe]="selectedRecipe"
+  ></app-recipe-detail>
+  <ng-template #infoText>
+    <p>Please select a Recipe</p>
+  </ng-template>
 </div>
