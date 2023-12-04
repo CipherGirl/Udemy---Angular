@@ -1,1 +1,9 @@
-<p>recipe-item works!</p>
+<div class="flex items-center border rounded-md">
+  <a class="flex-grow p-2" href="">
+    <h4>{{ recipe.name }}</h4>
+    <p>
+      {{ recipe.description }}
+    </p>
+  </a>
+  <img [src]="recipe.imagePath" style="max-height: 100px" />
+</div>
