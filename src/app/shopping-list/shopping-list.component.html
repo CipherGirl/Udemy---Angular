@@ -2,8 +2,11 @@
   <app-shopping-edit></app-shopping-edit>
   <hr class="my-2" />
   <ul class="flex flex-col gap-2">
-    <a class="p-2 rounded-sm border cursor-pointer" *ngFor="let ingredient of ingredients">
-      {{ ingredient.name }} ({{ingredient.amount}})
+    <a
+      class="p-2 rounded-sm border cursor-pointer"
+      *ngFor="let ingredient of ingredients"
+    >
+      {{ ingredient.name }} ({{ ingredient.amount }})
     </a>
   </ul>
 </div>
