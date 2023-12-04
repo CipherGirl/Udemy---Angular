@@ -16,10 +16,10 @@ export class RecipeListComponent {
         'https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg',
     },
     {
-      name: 'Biriyani',
-      description: 'Aromatic Authentic Biriyani',
+      name: 'Lamb Shank',
+      description: 'Authentic Lamb Shank',
       imagePath:
-        'https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg',
+        'https://www.billyparisi.com/wp-content/uploads/2022/04/lamb-shanks-featured.jpg',
     },
   ];
 

@@ -7,6 +7,7 @@
           type="text"
           id="name"
           class="shadow appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+          #ingredientName
         />
       </div>
       <div class="flex gap-2 items-center">
@@ -15,11 +16,17 @@
           type="number"
           id="amount"
           class="shadow appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+          #ingredientAmount
         />
       </div>
     </div>
     <div class="flex gap-2">
-      <button class="min-w-[5em] p-2 rounded-md bg-green-400">Add</button>
+      <button
+        class="min-w-[5em] p-2 rounded-md bg-green-400"
+        (click)="handleIndgredientToAdd()"
+      >
+        Add
+      </button>
       <button class="min-w-[5em] p-2 rounded-md bg-red-400">Delete</button>
       <button class="min-w-[5em] p-2 rounded-md bg-slate-400">Clear</button>
     </div>
