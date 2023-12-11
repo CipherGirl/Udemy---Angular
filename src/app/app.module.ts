@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { BetterHighlightDirective } from './directives/better-highlight.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BetterHighlightDirective } from './directives/better-highlight.directiv
     HeaderComponent,
     ShoppingEditComponent,
     BetterHighlightDirective,
+    DropdownDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

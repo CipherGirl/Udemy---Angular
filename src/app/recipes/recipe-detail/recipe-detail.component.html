@@ -6,14 +6,18 @@
     <h1>Recipe Name: {{ recipe.name }}</h1>
   </div>
   <div>
-    <div>
+    <div appDropdown>
       <button class="p-2 rounded-md bg-blue-300">Manage Recipe &#9660;</button>
-      <ul hidden>
+      <ul
+        class="border-2 rounded-md bg-slate-100 p-3 space-y-2"
+        [hidden]="true"
+      >
         <li><a href="">To Shopping List</a></li>
         <li><a href="">Edit Recipe</a></li>
         <li><a href="">Delete Recipe</a></li>
       </ul>
     </div>
+    <div></div>
   </div>
   <div>
     <h2>{{ recipe.description }}</h2>

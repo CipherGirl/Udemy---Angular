@@ -15,9 +15,12 @@
         <li (click)="onSelect('shopping-list')">Shopping List</li>
       </ul>
     </div>
-    <div class="ms-auto">
+    <div class="ms-auto" appDropdown>
       <button>Menu &#9660;</button>
-      <ul hidden>
+      <ul
+        class="border-2 rounded-md bg-slate-100 p-3 space-y-2"
+        [hidden]="true"
+      >
         <li><a href="">Save Data</a></li>
         <li><a href="">Fetch Data</a></li>
       </ul>
