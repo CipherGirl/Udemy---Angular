@@ -1,6 +1,9 @@
+import { EventEmitter } from '@angular/core';
 import { Recipe } from './recipe.types';
 
 export class RecipeService {
+  selectedRecipe = new EventEmitter<Recipe>();
+
   private recipes: Recipe[] = [
     {
       name: 'Biriyani',
@@ -19,4 +22,5 @@ export class RecipeService {
   getRecipe() {
     return this.recipes.slice();
   }
+
 }

@@ -1,6 +1,5 @@
 <div class="grid grid-cols-2 gap-4">
   <app-recipe-list
-    (selectedRecipeEventFromList)="selectedRecipe = $event"
   ></app-recipe-list>
   <app-recipe-detail
     *ngIf="selectedRecipe; else infoText"
