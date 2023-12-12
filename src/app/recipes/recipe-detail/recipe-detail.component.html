@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-2">
+<div class="flex flex-col gap-3">
   <div>
     <img [src]="recipe.imagePath" class="img-respoinsve" />
   </div>
@@ -23,6 +23,16 @@
     <h2>{{ recipe.description }}</h2>
   </div>
   <div>
-    <h2>Ingridients</h2>
+    <h2 class="text-xl">Ingredients</h2>
+    <div>
+      <ul class="flex flex-col gap-2 pt-2">
+        <li
+          class="p-2 rounded-sm border cursor-pointer"
+          *ngFor="let ingredient of recipe.ingredients"
+        >
+          {{ ingredient.name }} - {{ ingredient.amount }}
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
