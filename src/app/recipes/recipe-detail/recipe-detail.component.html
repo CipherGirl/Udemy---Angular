@@ -12,7 +12,7 @@
         class="border-2 rounded-md bg-slate-100 p-3 space-y-2"
         [hidden]="true"
       >
-        <li><a href="">To Shopping List</a></li>
+        <li><a (click)="handleAddToShopping()">To Shopping List</a></li>
         <li><a href="">Edit Recipe</a></li>
         <li><a href="">Delete Recipe</a></li>
       </ul>
@@ -24,6 +24,7 @@
   </div>
   <div>
     <h2 class="text-xl">Ingredients</h2>
+
     <div>
       <ul class="flex flex-col gap-2 pt-2">
         <li
