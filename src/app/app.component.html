@@ -1,13 +1,6 @@
 <app-header (featureSelected)="onNavigate($event)"></app-header>
 <div class="container m-auto">
   <div class="gap-2 pt-4">
-    <app-recipes
-      *ngIf="loadedFeature === 'recipes'"
-      class="bg-blue-200"
-    ></app-recipes>
-    <app-shopping-list
-      *ngIf="loadedFeature !== 'recipes'"
-      class="bg-blue-200"
-    ></app-shopping-list>
+    <router-outlet></router-outlet>
   </div>
 </div>

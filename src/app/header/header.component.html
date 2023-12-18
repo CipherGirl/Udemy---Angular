@@ -6,13 +6,16 @@
         appBetterHighlight
         [defaultColor]="'yellow'"
         [highlightColor]="'green'"
-        >Recipe Book</a
+      >
+        Recipe Book</a
       >
     </div>
     <div class="flex gap-4">
-      <ul class="flex gap-2">
-        <li (click)="onSelect('recipes')">Recipes</li>
-        <li (click)="onSelect('shopping-list')">Shopping List</li>
+      <ul class="flex gap-4">
+        <a [routerLink]="['recipes']" routerLinkActive="underline">Recipes</a>
+        <a [routerLink]="['shopping-list']" routerLinkActive="underline"
+          >Shopping List</a
+        >
       </ul>
     </div>
     <div class="ms-auto" appDropdown>
