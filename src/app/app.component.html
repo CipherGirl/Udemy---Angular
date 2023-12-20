@@ -1,15 +1,29 @@
-<div class="container mx-20 my-10">
-  <button class="border rounded-md p-2 bg-blue-300" (click)="handleClick()">
-    Toggle Password
-  </button>
-  <p *ngIf="showSecret">Secret Password: Tune</p>
-  <ul>
-    <li
-      *ngFor="let log of logs; index as i"
-      [ngStyle]="{ backgroundColor: i > 4 ? 'blue' : 'transparent' }"
-      [ngClass]="{ 'white-text': i > 4 }"
-    >
-      {{ log }}
-    </li>
-  </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+      <form>
+        <div id="user-data">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" class="form-control" />
+          </div>
+          <button class="btn btn-light" type="button">
+            Suggest an Username
+          </button>
+          <div class="mb-3">
+            <label for="email" class="form-label">Mail</label>
+            <input type="email" id="email" class="form-control" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="secret" class="form-label">Secret Questions</label>
+          <select id="secret" class="form-select">
+            <option value="pet">Your first Pet?</option>
+            <option value="teacher">Your first teacher?</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </div>
